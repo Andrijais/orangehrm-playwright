@@ -6,7 +6,11 @@ export class Login_page{
         this.loginButton = page.locator('button[type="submit"]');
     }
     async navigate(){
-        await this.page.goto('https://opensource-demo.orangehrmlive.com');
+        await this.page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login',
+            { waitUntil: 'domcontentloaded' }
+  );
+
+        // );
     }
 
     async login(username,password){
