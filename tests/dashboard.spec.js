@@ -33,7 +33,7 @@ test.describe('Dashboard test',() =>{
 
         await dashboardPage.goToMyInfoPage(page);
         await expect(page).toHaveURL('https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewPersonalDetails/empNumber/7');
-        await expect(myinfoPage.MyInfoHeading).toBeVisible();
+        await expect(myinfoPage.myInfoHeading).toBeVisible();
     })
 
 
